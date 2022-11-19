@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ver Shrek conmigo?</title>
+    <style>
+        .body {
+            background-color: rgb(124, 196, 124);
+            text-align: center;
+        }
+        .body__title {
+            color: white;
+        }
+
+        .body__img {
+            width: 100%;
+            border-radius: 10%;
+        }
+
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title"> ¿Quieres ver Shrek conmigo? ♥</h1>
+    <img src="./img/img 1.jpg" alt="video" class="body__img" />
+    <button class="b1" id="yes">Si quiero 🌚 </button>
+    <button class="b2" id="no">No quiero 😥</button>
+
+    <script>
+        const buttonSi = document.getElementById('yes');
+        const buttonNo = document.getElementById('no');
+
+        const vemosPeli = () => {
+            alert('Noche de película 🥰');
+            alert('Y luego cositas 🤭');
+            location.href = 'https://www.youtube.com/watch?v=PnFCwL8NlXs&ab_channel=armxndo';
+        }
+
+            const evitatocar = () => {
+                buttonNo.style.position = 'absolute'
+                buttonNo.style.top = (Math.random()*window.innerHeight)+ 'px';
+                buttonNo.style.left = (Math.random()*window.innerWidth)+ 'px';
+                
+            }
+
+            buttonSi.addEventListener('click', vemosPeli);
+            buttonNo.addEventListener('mouseover',evitatocar);
+
+    </script>
+</body>
+</html>
